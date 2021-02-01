@@ -11,9 +11,11 @@
 .nav-link:hover {
   color: #ececec;
 }
+#navbarNavAltMarkup {
+  padding: 0 12%;
+}
 .inner-header {
   margin: 0 auto;
-  max-width: 75%;
 }
 .header-title {
   padding-top: 6%
@@ -25,11 +27,11 @@
 .projects-section {
   max-width: 75%;
 }
-.projects-section-title {
-  padding: 0 5% 0 5%;
+.section-title {
+  padding: 5% 0 4% 0;
 }
-.projects-section-title {
-  padding: 5% 0 5% 0;
+.tech-pill {
+  width: 5%;
 }
 .footer {
   background: #090a0b;
