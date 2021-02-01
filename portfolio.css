@@ -1,0 +1,41 @@
+.site-header {
+  background-color: #090a0b;
+  height: 73%;
+}
+.navbar {
+  background: #090a0b;
+}
+.nav-link {
+  color: #bdbdbd;
+}
+.nav-link:hover {
+  color: #ececec;
+}
+.inner-header {
+  margin: 0 auto;
+  max-width: 75%;
+}
+.header-title {
+  padding-top: 6%
+}
+.main-content {
+  background: #191b1f;
+  color: white;
+}
+.projects-section {
+  max-width: 75%;
+}
+.projects-section-title {
+  padding: 0 5% 0 5%;
+}
+.projects-section-title {
+  padding: 5% 0 5% 0;
+}
+.footer {
+  background: #090a0b;
+}
+.footer-inner {
+  color: #bdbdbd;
+  max-width: 73%;
+  padding: 2% 0 2% 0;
+}
