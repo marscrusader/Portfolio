@@ -65,3 +65,14 @@
   max-width: 73%;
   padding: 2% 0 2% 0;
 }
+.link-nostyle {
+  text-decoration: inherit;
+  color: inherit;
+  margin-left: 2%;
+}
+.link-nostyle:hover {
+  color: #ececec;
+}
+.link-nostyle:focus {
+  outline: none;
+}
