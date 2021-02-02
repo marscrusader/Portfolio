@@ -21,8 +21,8 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Contact</a>
-            <a class="nav-link active" aria-current="page" href="#">Projects</a>
+            <a class="nav-link active" aria-current="page" href="#contact-section">Contact</a>
+            <a class="nav-link active" aria-current="page" href="#project-section">Projects</a>
           </div>
           <span class="navbar-right-text" style="color: #bdbdbd;">Dark mode</span>
         </div>
@@ -39,10 +39,43 @@
   </header>
   <main class="main-content">
     <div class="container projects-section">
-      <h1 class="section-title">Projects</h1>
+      <h1 class="section-title" id="project-section">Projects</h1>
       <div class="projects-list">
         <hr />
-        <div class="row project mb-5">
+        <div class="row project pb-5">
+          <div class="row mb-3">
+            <div class="col col-5">
+              <h3>Serverless Porfolio Page</h3>
+            </div>
+            <div class="col my-auto">
+              <span class="badge rounded-pill bg-dark">AWS API Gateway</span>
+              <span class="badge rounded-pill bg-dark">AWS Lambda</span>
+              <span class="badge rounded-pill bg-dark">AWS SES</span>
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              The page you are currently looking at is built with standard HTML, CSS, and some jQuery. There is a
+              serverless feature to send a contact email to me through the form at the bottom of the page, this type of
+              scenario is perfect for utilizing cloud technology. A "POST" request is made to API Gateway, API Gateway
+              will trigger a lambda function which processes the request body and uses SES to send an email containing
+              your message and contact details to me. Simple and cost effective.
+            </p>
+          </div>
+          <div class="row">
+            <h5>Improvements</h5>
+            <p>
+              I'm thinking of building a simple "like" feature for each project listed on this page. Using API Gateway,
+              Lambda, and DynamoDB, this shouldn't be too difficult.
+            </p>
+          </div>
+          <div class="project-links mt-2">
+            <button class="btn btn-outline-light" onclick="window.open('https://github.com/shawnlah/Portfolio')">Source
+              <span style="font-size: 21px;" class="fa fa-github"></span></button>
+          </div>
+        </div>
+        <hr />
+        <div class="row project pb-5">
           <div class="row mb-3">
             <div class="col col-5">
               <h3>Inventory Management Platform</h3>
@@ -70,7 +103,7 @@
             </p>
             <p>
               Most people would have most likely went for MongoDB instead of Postgres to complete the "MERN" stack but
-              in this case, the data columns are already known beforehand so using an SQL based database makes sense.
+              in this case, the data columns are already known beforehand so using a relational database makes sense.
               The project is also using AWS S3 to store images, the user uploads the image to S3 and S3 returns the
               key which we would then store in the database. As for authentication, I decided to use Auth0 as I
               believe outsourcing authentication to a third party service provider is safer than building our own
@@ -112,18 +145,25 @@
           </div>
         </div>
         <hr />
-        <div class="row project">
+        <div class="row project pb-5">
           <div class="row mb-3">
             <div class="col col-5">
-              <h3>Serverless Porfolio Page</h3>
+              <h3>Naruto Hand Seal Detection</h3>
             </div>
             <div class="col my-auto">
+              <span class="badge rounded-pill bg-dark">Python</span>
               <span class="badge rounded-pill bg-dark">AWS S3</span>
-              <span class="badge rounded-pill bg-dark">AWS API Gateway</span>
-              <span class="badge rounded-pill bg-dark">AWS Lambda</span>
             </div>
           </div>
+          <div class="row blur-effect align-items-center ms-1">
+            <h3 class="coming-soon">Coming Soon.</h3>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="container contacts-section">
+      <h1 class="section-title" id="contact-section">Contact</h1>
+      <div class="contacts-form">
       </div>
     </div>
   </main>

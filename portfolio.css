@@ -1,6 +1,6 @@
 .site-header {
   background-color: #090a0b;
-  height: 73%;
+  height: 84%;
 }
 .navbar {
   background: #090a0b;
@@ -27,11 +27,35 @@
 .projects-section {
   max-width: 75%;
 }
+.contacts-section {
+  max-width: 75%;
+}
 .section-title {
   padding: 5% 0 4% 0;
 }
 .tech-pill {
   width: 5%;
+}
+.blur-effect {
+  height: 100px;
+  position: relative;
+  text-align: center;
+}
+.blur-effect::before{
+  content: "";
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4b4d51;
+  filter: blur(5px);
+  z-index:0;
+}
+.coming-soon {
+  position: relative;
+  z-index: 1;
 }
 .footer {
   background: #090a0b;
