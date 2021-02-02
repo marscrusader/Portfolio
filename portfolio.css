@@ -76,3 +76,10 @@
 .link-nostyle:focus {
   outline: none;
 }
+#submit-loading {
+  display: none;
+}
+.message-alert {
+  display: none;
+  border: 1px solid #f8f9fa;
+}
