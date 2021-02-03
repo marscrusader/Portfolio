@@ -132,7 +132,28 @@
   }
 }
 
-@media only screen and (min-height: 1000px) and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (min-height: 1000px) {
+  .sub-description {
+    display: none;
+  }
+  .header-title {
+    padding-top: 10%;
+  }
+  .site-header {
+    height: 53%;
+  }
+  .projects-section {
+    max-width: 96%;
+  }
+  .contacts-section {
+    max-width: 96%;
+  }
+  .carbon-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-height: 1000px) {
   .sub-description {
     display: none;
   }
@@ -140,13 +161,24 @@
     padding-top: 8%;
   }
   .site-header {
-    height: 43%;
+    height: 88%;
   }
   .projects-section {
     max-width: 96%;
   }
   .contacts-section {
     max-width: 96%;
+  }
+  .carbon-image {
+    width: 100%;
+  }
+  #navbarNavAltMarkup {
+    padding: 0;
+  }
+  .footer-inner {
+    max-width: none;
+    padding: 2% 0;
+    text-align: center;
   }
 }
 
