@@ -31,9 +31,6 @@
 .description-text {
   color: whitesmoke;
 }
-.dark-mode-toggle {
-  display: flex;
-}
 .dark-mode-text {
   padding-left: 9px;
   color: #bdbdbd;
