@@ -31,6 +31,16 @@
 .description-text {
   color: whitesmoke;
 }
+.dark-mode-toggle {
+  display: flex;
+}
+.dark-mode-text {
+  padding-left: 9px;
+  color: #bdbdbd;
+}
+#darkModeSwitch:hover {
+  cursor: pointer;
+}
 #cursor {
   background: whitesmoke;
   line-height: 25px;
@@ -44,9 +54,17 @@
     background-color: transparent;
   }
 }
+:root {
+  --background-color:  #191b1f;
+  --text-color: white;
+}
+[data-theme="light"] {
+  --background-color: whitesmoke;
+  --text-color: #212529;
+}
 .main-content {
-  background: #191b1f;
-  color: white;
+  background: var(--background-color);
+  color: var(--text-color);
 }
 .projects-section {
   max-width: 75%;
