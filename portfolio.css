@@ -107,8 +107,13 @@
   display: none;
   border: 1px solid #f8f9fa;
 }
+@media only screen and (min-width: 800px) {
+  .sub-description {
+    display: none;
+  }
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #navbarNavAltMarkup {
     padding: 0;
   }
@@ -116,10 +121,24 @@
     padding-top: 18%;
   }
   .carbon-image {
-    width: auto;
+    display: none;
+  }
+  .description-wrapper {
+    display: none;
+  }
+  .sub-description {
+    color: whitesmoke;
+    text-align: start;
+    padding-left: 4%;
+  }
+  .last-line-sub {
+    display: flex;
+  }
+  #cursor {
+    height: 20px;
   }
   .site-header {
-    height: 50%;
+    height: 43%;
   }
   .description-text {
     font-size: 1.05rem;
