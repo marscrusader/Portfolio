@@ -20,6 +20,12 @@
 .header-title {
   padding-top: 6%
 }
+.carbon-image {
+  width: 70%;
+}
+.description-text {
+  color: whitesmoke;
+}
 .main-content {
   background: #191b1f;
   color: white;
@@ -82,4 +88,32 @@
 .message-alert {
   display: none;
   border: 1px solid #f8f9fa;
+}
+
+@media only screen and (max-width: 600px) {
+  #navbarNavAltMarkup {
+    padding: 0;
+  }
+  .header-title {
+    padding-top: 18%;
+  }
+  .carbon-image {
+    width: 100%;
+  }
+  .site-header {
+    height: 50%;
+  }
+  .description-text {
+    font-size: 1.05rem;
+  }
+  .projects-section {
+    max-width: 96%;
+  }
+  .contacts-section {
+    max-width: 96%;
+  }
+  .footer-inner {
+    max-width: 100%;
+    text-align: center;
+  }
 }
