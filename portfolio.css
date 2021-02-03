@@ -130,6 +130,7 @@
   }
 }
 
+/* Tablet Portrait */
 @media only screen and (max-width: 1200px) and (max-height: 780px) {
   .carbon-image {
     display: none;
@@ -169,8 +170,12 @@
   .footer-inner {
     max-width: 93%;
   }
+  .left-navlinks {
+    padding-left: 1%;
+  }
 }
 
+/* Table Landscape */
 @media only screen and (max-width: 780px) and (max-height: 1200px) {
   .carbon-image {
     display: none;
@@ -210,8 +215,12 @@
   .footer-inner {
     max-width: 93%;
   }
+  .left-navlinks {
+    padding-left: 1%;
+  }
 }
 
+/* Mobile */
 @media only screen and (max-width: 800px) and (max-height: 1000px) {
   #navbarNavAltMarkup {
     padding: 0;
