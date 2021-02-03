@@ -20,11 +20,31 @@
 .header-title {
   padding-top: 6%
 }
-.carbon-image {
-  width: 70%;
+@media only screen and (min-width: 800px) {
+  .carbon-image {
+    width: 70%;
+  }
+}
+.description-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 }
 .description-text {
   color: whitesmoke;
+}
+#cursor {
+  background: whitesmoke;
+  line-height: 25px;
+  margin-left: 3px;
+  animation: caret 1s steps(1) infinite;
+  width: 7px;
+  height: 17px;
+}
+@keyframes caret {
+  50% {
+    background-color: transparent;
+  }
 }
 .main-content {
   background: #191b1f;
