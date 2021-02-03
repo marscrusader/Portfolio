@@ -132,7 +132,25 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-height: 1000px) and (max-width: 1000px) {
+  .sub-description {
+    display: none;
+  }
+  .header-title {
+    padding-top: 8%;
+  }
+  .site-header {
+    height: 43%;
+  }
+  .projects-section {
+    max-width: 96%;
+  }
+  .contacts-section {
+    max-width: 96%;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-height: 1000px) {
   #navbarNavAltMarkup {
     padding: 0;
   }
@@ -177,5 +195,14 @@
 @media only screen and (max-height: 580px) {
   .site-header {
     height: 50%
+  }
+}
+
+@media only screen and (max-height: 400px) and (max-width: 800px) {
+  .site-header {
+    height: 83%
+  }
+  .header-title {
+    padding-top: 12%;
   }
 }
