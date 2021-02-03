@@ -149,7 +149,7 @@
     max-width: 96%;
   }
   .carbon-image {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -170,7 +170,7 @@
     max-width: 96%;
   }
   .carbon-image {
-    width: 100%;
+    max-width: 100%;
   }
   #navbarNavAltMarkup {
     padding: 0;
