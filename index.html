@@ -17,21 +17,34 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      $("#myBtn").click(function () {
-        $('.toast').toast('show');
-      });
       $("#contact-form").submit(function (e) {
-        $('.toast').toast('show');
         e.preventDefault()
         $("#submit-text").hide()
         $("#submit-loading").css("display", "block")
         $("#submit-button").prop("disabled", true)
         console.log('pussy')
-        setTimeout(() => {
-          $("#submit-text").show()
-          $("#submit-loading").hide()
-          $(".message-alert").css("display", "block")
-        }, 1600);
+        $.ajax({
+          type: "POST",
+          url: 'https://00b48nihb3.execute-api.ap-southeast-1.amazonaws.com',
+          contentType: "application/json",
+          dataType: 'json',
+          data: JSON.stringify({
+            name: $("#name-input").val(),
+            contact: $("#contact-input").val(),
+            subject: $("#subject-input").val(),
+            message: $("#message-input").val()
+          }),
+          crossDomain: true
+        })
+          .fail(function () {
+            $("#alert-message").text("An error has occured, please reach me through the links at the bottom of the page.").css("color", "#ec1d1d")
+            $(".message-alert").css("border-color", "#ec1d1d")
+          })
+          .always(function () {
+            $("#submit-text").show()
+            $("#submit-loading").hide()
+            $(".message-alert").css("display", "block")
+          })
       })
     })
   </script>
@@ -73,6 +86,7 @@
               <span class="badge rounded-pill bg-dark">AWS API Gateway</span>
               <span class="badge rounded-pill bg-dark">AWS Lambda</span>
               <span class="badge rounded-pill bg-dark">AWS SES</span>
+              <span class="badge rounded-pill bg-dark">AWS S3</span>
             </div>
           </div>
           <div class="row">
@@ -81,7 +95,7 @@
               serverless feature to send a contact email to me through the form at the bottom of the page, this type of
               scenario is perfect for utilizing cloud technology. A "POST" request is made to API Gateway, API Gateway
               will trigger a lambda function which processes the request body and uses SES to send an email containing
-              your message and contact details to me. Simple and cost effective.
+              your message and contact details to me. The site is hosted on S3, simple and cost effective.
             </p>
           </div>
           <div class="row">
@@ -213,7 +227,7 @@
           </div>
           <div class="mt-4">
             <div class="alert alert-dismissible fade show message-alert" role="alert">
-              Your message has been successfully sent.
+              <span id="alert-message">Your message has been successfully sent.</span>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"
                 aria-label="Close"></button>
             </div>
