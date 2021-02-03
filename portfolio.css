@@ -156,7 +156,7 @@
 }
 
 @media only screen and (max-height: 580px) {
-  .site-description {
-    padding-top: 0 !important;
+  .site-header {
+    height: 46%
   }
 }
