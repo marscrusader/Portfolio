@@ -98,6 +98,7 @@
 .coming-soon {
   position: relative;
   z-index: 1;
+  color: white;
 }
 .footer {
   background: #090a0b;
