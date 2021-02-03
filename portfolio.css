@@ -126,42 +126,16 @@
   display: none;
   border: 1px solid #f8f9fa;
 }
-@media only screen and (min-width: 800px) {
-  .sub-description {
-    display: none;
-  }
-}
 
-@media only screen and (max-width: 1000px) and (min-height: 1000px) {
-  .sub-description {
-    display: none;
-  }
-  .header-title {
-    padding-top: 10%;
-  }
-  .site-header {
-    height: 53%;
-  }
-  .projects-section {
-    max-width: 96%;
-  }
-  .contacts-section {
-    max-width: 96%;
-  }
+@media only screen and (min-width: 800px) and (max-height: 800px) {
   .carbon-image {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1000px) and (max-height: 1000px) {
-  .sub-description {
     display: none;
   }
   .header-title {
     padding-top: 8%;
   }
   .site-header {
-    height: 88%;
+    height: 43%;
   }
   .projects-section {
     max-width: 96%;
@@ -169,16 +143,57 @@
   .contacts-section {
     max-width: 96%;
   }
-  .carbon-image {
-    max-width: 100%;
+  .description-wrapper {
+    display: none;
+  }
+  .sub-description {
+    color: whitesmoke;
+    text-align: start;
+    padding-left: 4%;
+  }
+  .last-line-sub {
+    display: flex;
+  }
+  .dark-mode-toggle {
+    padding-right: 6%;
   }
   #navbarNavAltMarkup {
     padding: 0;
   }
-  .footer-inner {
-    max-width: none;
-    padding: 2% 0;
-    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) and (min-height: 1000px) {
+  .carbon-image {
+    display: none;
+  }
+  .header-title {
+    padding-top: 8%;
+  }
+  .description-wrapper {
+    display: none;
+  }
+  .sub-description {
+    color: whitesmoke;
+    text-align: start;
+    padding-left: 4%;
+  }
+  .last-line-sub {
+    display: flex;
+  }
+  .site-header {
+    height: 34%;
+  }
+  .projects-section {
+    max-width: 96%;
+  }
+  .contacts-section {
+    max-width: 96%;
+  }
+  .dark-mode-toggle {
+    padding-right: 6%;
+  }
+  #navbarNavAltMarkup {
+    padding: 0;
   }
 }
 
@@ -230,7 +245,7 @@
   }
 }
 
-@media only screen and (max-height: 400px) and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (max-height: 400px) {
   .site-header {
     height: 83%
   }
