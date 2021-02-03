@@ -86,7 +86,6 @@
               <span class="badge rounded-pill bg-dark">AWS API Gateway</span>
               <span class="badge rounded-pill bg-dark">AWS Lambda</span>
               <span class="badge rounded-pill bg-dark">AWS SES</span>
-              <span class="badge rounded-pill bg-dark">AWS S3</span>
             </div>
           </div>
           <div class="row">
@@ -94,8 +93,12 @@
               The page you are currently looking at is built with standard HTML, CSS, and some jQuery. There is a
               serverless feature to send a contact email to me through the form at the bottom of the page, this type of
               scenario is perfect for utilizing cloud technology. A "POST" request is made to API Gateway, API Gateway
-              will trigger a lambda function which processes the request body and uses SES to send an email containing
-              your message and contact details to me. The site is hosted on S3, simple and cost effective.
+              will trigger a Lambda function which processes the request body and uses SES to send an email containing
+              your message and contact details to me. I originally wanted to host the static site on S3 and utilize
+              Route 53 for custom domain, but it is not completely free eventhough it only cost 0.50$ per month per
+              hosted zone. On Netlify however, I get automated deployments whenever I push my code to GitHub and free
+              SSL creation and renewal. I also like using different cloud providers in order to support developers from
+              a wide variety of companies, and so the choice between the two is obvious.
             </p>
           </div>
           <div class="row">
