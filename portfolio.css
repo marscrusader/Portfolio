@@ -20,10 +20,8 @@
 .header-title {
   padding-top: 6%
 }
-@media only screen and (min-width: 800px) {
-  .carbon-image {
-    width: 70%;
-  }
+.carbon-image {
+  width: 70%;
 }
 .description-wrapper {
   display: flex;
@@ -118,7 +116,7 @@
     padding-top: 18%;
   }
   .carbon-image {
-    width: 100%;
+    width: auto;
   }
   .site-header {
     height: 50%;
