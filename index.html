@@ -24,7 +24,7 @@
         $("#submit-button").prop("disabled", true)
         $.ajax({
           type: "POST",
-          url: 'https://00b48nihb3.execute-api.ap-southeast-1.amazonaws.com',
+          url: 'https://aw2i7qxej0.execute-api.ap-southeast-1.amazonaws.com/prod',
           contentType: "application/json",
           dataType: 'json',
           data: JSON.stringify({
@@ -130,31 +130,27 @@
           </div>
           <div class="row">
             <p>
-              The page you are currently looking at is built with standard HTML, CSS, and some jQuery.
-              There is a
-              serverless feature to send a contact email to me through the form at the bottom of the page,
-              this type of
-              scenario is perfect for utilizing cloud technology. A "POST" request is made to API Gateway,
-              API Gateway
-              will trigger a Lambda function which processes the request body and uses SES to send an
-              email containing
-              your message and contact details to me. I originally wanted to host the static site on S3
-              and utilize
-              Route 53 for custom domain, but it is not completely free eventhough it only cost 0.50$ per
-              month per
-              hosted zone. On Netlify however, I get automated deployments whenever I push my code to
-              GitHub and free
-              SSL creation and renewal. I also like using different cloud providers in order to support
-              developers from
+              The page you are currently looking at is built with standard HTML, CSS, and some jQuery. There is a
+              serverless feature to send a contact email to me through the form at the bottom of the page, this type of
+              scenario is perfect for utilizing cloud technology. A "POST" request is made to API Gateway, API Gateway
+              will trigger a Lambda function which processes the request body and uses SES to send an email containing
+              your message and contact details to me. I originally wanted to host the static site on S3 and utilize
+              Route 53 for custom domain, but it is not completely free eventhough it only cost 0.50$ per month per
+              hosted zone. On Netlify however, I get automated deployments whenever I push my code to GitHub and free
+              SSL creation and renewal. I also like using different cloud providers in order to support developers from
               a wide variety of companies, and so the choice between the two is obvious.
             </p>
           </div>
           <div class="row">
             <h5>Improvements</h5>
             <p>
-              I'm thinking of building a simple "like" feature for each project listed on this page. Using
-              API Gateway,
-              Lambda, and DynamoDB, this shouldn't be too difficult.
+              I'm thinking of building a simple "like" feature for each project listed on this page. Using API Gateway,
+              Lambda, and DynamoDB, this shouldn't be too difficult. However, authentication becomes a problem, in order
+              to secure API Gateway endpoints, an API key is needed to make the request, but the key will be exposed
+              if the request is made on the client side. Which means an authentication system is needed to be present on
+              the site, but making users login on my static portfolio site that literally does nothing might have a
+              negative effect on user experience. On the other hand, I can throttle incoming requests but that still
+              doesn't completely protects the endpoint.
             </p>
           </div>
           <div class="project-links mt-2">
@@ -182,73 +178,48 @@
           </div>
           <div class="row">
             <p>
-              The idea of this project came when I was organizing the store room in my house and realised
-              how
-              cumbersome it was to keep track of the items. The frontend is written with Typescript and
-              React, backend
-              is built with Express which is also in Typescript. Database is Postgres and Sequelize is
-              used as the
-              ORM, the project is also using Sqitch to manage database migrations. Docker and docker
-              compose for
-              development. Developing in Typescript takes much longer than in Javascript but I feel that
-              the benefits
-              far outweighs the costs, especially when you are developing a production level project. It
-              helps you
-              spot silly or potential bugs beforehand and also gives you a nice autocomplete.
+              The idea of this project came when I was organizing the store room in my house and realised how cumbersome
+              it was to keep track of the items. The frontend is written with Typescript and React, backend is built
+              with Express which is also in Typescript. Database is Postgres and Sequelize is used as the ORM, the
+              project is also using Sqitch to manage database migrations. Docker and docker compose for development.
+              Developing in Typescript takes much longer than in Javascript but I feel that the benefits far outweighs
+              the costs, especially when you are developing a production level project. It helps you spot silly or
+              potential bugs beforehand and also gives you a nice autocomplete.
             </p>
             <p>
               Most people would have most likely went for MongoDB instead of Postgres to complete the
-              "MERN" stack but
-              in this case, the data columns are already known beforehand so using a relational database
-              makes sense.
-              The project is also using AWS S3 to store images, the user uploads the image to S3 and S3
-              returns the
-              key which we would then store in the database. As for authentication, I decided to use Auth0
-              as I
-              believe outsourcing authentication to a third party service provider is safer than building
-              our own
-              authentication system, especially when there is time constraints. These third party
-              authentication
-              providers have a system that is well tested and will often be more superior than what most
-              developers
-              can build. On to deployment, the frontend is deployed on Netlify for ease and backend is
-              deployed on
-              Heroku.
+              "MERN" stack but in this case, the data columns are already known beforehand so using a relational
+              database makes sense. The project is also using AWS S3 to store images, the user uploads the image to S3
+              and S3 returns the key which we would then store in the database. As for authentication, I decided to use
+              Auth0 as I believe outsourcing authentication to a third party service provider is safer than building our
+              own authentication system, especially when there is time constraints. These third party authentication
+              providers have a system that is well tested and will often be more superior than what most developers can
+              build. On to deployment, the frontend is deployed on Netlify for ease and backend is deployed on Heroku.
+              I'm on a free Heroku plan so the first API request will take some time or even fail as Heroku needs time
+              to "start" the server.
             </p>
           </div>
           <div class="row">
             <h5>Features</h5>
             <p>
-              A user can sign up and create a collection. There are no limit to how
-              many collections can a user have. Each collection contains a set of inventories, there is
-              also no limit
-              to how many inventories can be created. Users are also able to create categories and status
-              for
-              inventories, these can be used for filtering. The inventories are displayed in a data table
-              that is
-              capable of sorting by name or creation date, filtering can be done by search, quantity,
-              serial number,
-              category, or status. Users can also select multiple inventories for bulk delete. They can
-              also update
-              the details of each inventory.
+              A user can sign up and create a collection. There are no limit to how many collections can a user have.
+              Each collection contains a set of inventories, there is also no limit to how many inventories can be
+              created. Users are also able to create categories and status for inventories, these can be used for
+              filtering. The inventories are displayed in a data table that is capable of sorting by name or creation
+              date, filtering can be done by search, quantity, serial number, category, or status. Users can also select
+              multiple inventories for bulk delete. They can also update the details of each inventory.
             </p>
           </div>
           <div class="row">
             <h5>Improvements</h5>
             <p>
-              There are certainly things that can be improved. First is improving security, right now, if
-              user "A"
-              knows the collection ID of user "B", they would be able to perform API calls on behalf of
-              user "B".
-              There are two ways we can address this, use Auth0 permissions, or encrypt the collection ID
-              before
-              passing to the client. Another way to improve security is to track the user's activity,
-              doing this
-              allows us to better audit the user's data in the event something goes wrong. Other issues to
-              fix
-              includes implementing pagination as well as form validation on the client side. The platform
-              will be
-              production ready when these improvements are implemented.
+              There are certainly things that can be improved. First is improving security, right now, if user "A" knows
+              the collection ID of user "B", they would be able to perform API calls on behalf of user "B". There are
+              two ways we can address this, use Auth0 permissions, or encrypt the collection ID before passing to the
+              client. Another way to improve security is to track the user's activity, doing this allows us to better
+              audit the user's data in the event something goes wrong. Other issues to fix includes implementing
+              pagination as well as form validation on the client side. The platform will be production ready when these
+              improvements are implemented.
             </p>
           </div>
           <div class="project-links mt-2">
