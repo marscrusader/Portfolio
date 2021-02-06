@@ -159,17 +159,17 @@
   .contacts-section {
     max-width: 96%;
   }
-  .description-wrapper {
+  /* .description-wrapper {
     display: none;
-  }
-  .sub-description {
+  } */
+  /* .sub-description {
     color: whitesmoke;
     text-align: start;
     padding-left: 4%;
   }
   .last-line-sub {
     display: flex;
-  }
+  } */
   .dark-mode-toggle {
     padding-right: 6%;
   }
@@ -196,17 +196,17 @@
   .header-title {
     padding-top: 8%;
   }
-  .description-wrapper {
+  /* .description-wrapper {
     display: none;
-  }
-  .sub-description {
+  } */
+  /* .sub-description {
     color: whitesmoke;
     text-align: start;
     padding-left: 4%;
   }
   .last-line-sub {
     display: flex;
-  }
+  } */
   .site-header {
     height: 34%;
   }
