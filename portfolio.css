@@ -143,9 +143,9 @@
 
 /* Tablet Portrait */
 @media only screen and (max-width: 1200px) and (max-height: 780px) {
-  .carbon-image {
+  /* .carbon-image {
     display: none;
-  }
+  } */
   .header-title {
     padding-top: 8%;
   }
