@@ -240,7 +240,7 @@
     padding-top: 18%;
   } */
   .carbon-image {
-    display: none;
+    /* display: none; */
     align-self: flex-start;
   }
   /* .description-wrapper {
