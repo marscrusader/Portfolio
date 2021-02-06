@@ -150,9 +150,9 @@
   .header-title {
     padding-top: 8%;
   }
-  .site-header {
+  /* .site-header {
     height: 43%;
-  }
+  } */
   .projects-section {
     max-width: 96%;
   }
@@ -207,9 +207,9 @@
   .last-line-sub {
     display: flex;
   } */
-  .site-header {
+  /* .site-header {
     height: 34%;
-  }
+  } */
   .projects-section {
     max-width: 96%;
   }
@@ -259,9 +259,9 @@
   #cursor {
     height: 20px;
   }
-  .site-header {
+  /* .site-header {
     height: 43%;
-  }
+  } */
   .description-text {
     font-size: 1.05rem;
   }
@@ -278,15 +278,15 @@
 }
 
 @media only screen and (max-height: 580px) {
-  .site-header {
+  /* .site-header {
     height: 50%
-  }
+  } */
 }
 
 @media only screen and (max-width: 800px) and (max-height: 400px) {
-  .site-header {
+  /* .site-header {
     height: 83%
-  }
+  } */
   .header-title {
     padding-top: 12%;
   }
