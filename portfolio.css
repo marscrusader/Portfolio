@@ -163,9 +163,9 @@
   .footer-inner {
     max-width: 93%;
   }
-  .left-navlinks {
+  /* .left-navlinks {
     padding-left: 1%;
-  }
+  } */
 }
 
 /* Table Landscape */
@@ -194,9 +194,9 @@
   .footer-inner {
     max-width: 93%;
   }
-  .left-navlinks {
+  /* .left-navlinks {
     padding-left: 1%;
-  }
+  } */
 }
 
 /* Mobile */
