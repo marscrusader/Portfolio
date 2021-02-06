@@ -125,7 +125,32 @@
 }
 
 /* Tablet */
-@media only screen and (max-width: 1200px) and (max-height: 780px) {
+/* @media only screen and (max-width: 1200px) and (max-height: 780px) {
+  .carbon-image {
+    width: auto;
+  }
+  .header-title {
+    padding-top: 8%;
+  }
+  .projects-section {
+    max-width: 96%;
+  }
+  .contacts-section {
+    max-width: 96%;
+  }
+  #navbarNavAltMarkup {
+    padding: 0;
+  }
+  #cursor {
+    height: 17px;
+  }
+  .footer-inner {
+    max-width: 93%;
+  }
+} */
+
+/* Table Landscape */
+@media only screen and (max-width: 780px) and (max-height: 1200px) {
   .carbon-image {
     width: auto;
   }
