@@ -151,9 +151,9 @@
   .contacts-section {
     max-width: 96%;
   }
-  .dark-mode-toggle {
+  /* .dark-mode-toggle {
     padding-right: 6%;
-  }
+  } */
   #navbarNavAltMarkup {
     padding: 0;
   }
@@ -182,9 +182,9 @@
   .contacts-section {
     max-width: 96%;
   }
-  .dark-mode-toggle {
+  /* .dark-mode-toggle {
     padding-right: 7%;
-  }
+  } */
   #navbarNavAltMarkup {
     padding: 0;
   }
