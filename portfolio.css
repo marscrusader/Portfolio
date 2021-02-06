@@ -236,13 +236,14 @@
   #navbarNavAltMarkup {
     padding: 0;
   }
-  .header-title {
+  /* .header-title {
     padding-top: 18%;
-  }
+  } */
   .carbon-image {
     display: none;
+    align-self: flex-start;
   }
-  .description-wrapper {
+  /* .description-wrapper {
     display: none;
   }
   .sub-description {
@@ -252,7 +253,7 @@
   }
   .last-line-sub {
     display: flex;
-  }
+  } */
   #cursor {
     height: 20px;
   }
