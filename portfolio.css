@@ -1,6 +1,5 @@
 .site-header {
   background-color: #090a0b;
-  /* height: 84%; */
 }
 .navbar {
   background: #090a0b;
@@ -136,40 +135,22 @@
   .sub-description {
     display: none;
   }
-  /* .site-header {
-    height: auto;
-  } */
 }
 
 /* Tablet Portrait */
 @media only screen and (max-width: 1200px) and (max-height: 780px) {
   .carbon-image {
-    /* display: none; */
     width: auto;
   }
   .header-title {
     padding-top: 8%;
   }
-  /* .site-header {
-    height: 43%;
-  } */
   .projects-section {
     max-width: 96%;
   }
   .contacts-section {
     max-width: 96%;
   }
-  /* .description-wrapper {
-    display: none;
-  } */
-  /* .sub-description {
-    color: whitesmoke;
-    text-align: start;
-    padding-left: 4%;
-  }
-  .last-line-sub {
-    display: flex;
-  } */
   .dark-mode-toggle {
     padding-right: 6%;
   }
@@ -190,26 +171,11 @@
 /* Table Landscape */
 @media only screen and (max-width: 780px) and (max-height: 1200px) {
   .carbon-image {
-    /* display: none; */
     width: auto;
   }
   .header-title {
     padding-top: 8%;
   }
-  /* .description-wrapper {
-    display: none;
-  } */
-  /* .sub-description {
-    color: whitesmoke;
-    text-align: start;
-    padding-left: 4%;
-  }
-  .last-line-sub {
-    display: flex;
-  } */
-  /* .site-header {
-    height: 34%;
-  } */
   .projects-section {
     max-width: 96%;
   }
@@ -242,26 +208,11 @@
     padding-top: 16%;
   }
   .carbon-image {
-    /* display: none; */
     width: auto;
   }
-  /* .description-wrapper {
-    display: none;
-  }
-  .sub-description {
-    color: whitesmoke;
-    text-align: start;
-    padding-left: 4%;
-  }
-  .last-line-sub {
-    display: flex;
-  } */
   #cursor {
     height: 15px;
   }
-  /* .site-header {
-    height: 43%;
-  } */
   .description-text {
     font-size: 1.05rem;
   }
@@ -277,16 +228,7 @@
   }
 }
 
-@media only screen and (max-height: 580px) {
-  /* .site-header {
-    height: 50%
-  } */
-}
-
 @media only screen and (max-width: 800px) and (max-height: 400px) {
-  /* .site-header {
-    height: 83%
-  } */
   .header-title {
     padding-top: 12%;
   }
