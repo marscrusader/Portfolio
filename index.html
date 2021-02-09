@@ -174,7 +174,8 @@
               project is also using Sqitch to manage database migrations. Docker and docker compose for development.
               Developing in Typescript takes much longer than in Javascript but I feel that the benefits far outweighs
               the costs, especially when you are developing a production level project. It helps you spot silly or
-              potential bugs beforehand and also gives you a nice autocomplete.
+              potential bugs beforehand and also gives you a nice autocomplete. You can also create a shared folder
+              between the client and server side code to share types or interfaces of requests and responses.
             </p>
             <p>
               Most people would have most likely went for MongoDB instead of Postgres to complete the
@@ -182,7 +183,7 @@
               database makes sense. The project is also using AWS S3 to store images, the user uploads the image to S3
               and S3 returns the key which we would then store in the database. As for authentication, I decided to use
               Auth0 as I believe outsourcing authentication to a third party service provider is safer than building our
-              own authentication system, especially when there is time constraints. These third party authentication
+              own authentication system, especially when there are time constraints. These third party authentication
               providers have a system that is well tested and will often be more superior than what most developers can
               build. On to deployment, the frontend is deployed on Netlify for ease and backend is deployed on Heroku.
               I'm on a free Heroku plan so the first API request will take some time or even fail as Heroku needs time
