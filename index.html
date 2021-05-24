@@ -60,6 +60,7 @@
           $("#demo-button-1").attr("class", "btn btn-outline-dark")
           $("#submit-button").attr("class", "btn btn-outline-dark")
           $("#close-alert-button").attr("class", "btn-close")
+          $("#cursor").css("background", "#212529")
         } else {
           switchToTheme = "dark"
           $("#github-button-1").attr("class", "btn btn-outline-light")
@@ -67,6 +68,7 @@
           $("#demo-button-1").attr("class", "btn btn-outline-light")
           $("#submit-button").attr("class", "btn btn-outline-light")
           $("#close-alert-button").attr("class", "btn-close btn-close-white")
+          $("#cursor").css("background", "white")
         }
         document.documentElement.setAttribute("data-theme", switchToTheme)
       })
@@ -91,20 +93,19 @@
       </div>
     </nav>
     <div class="container header-title">
-      <div class="row justify-content-center">
-        <img src="carbon.png" alt="shawn" class="carbon-image">
-      </div>
-      <div class="row text-center pt-4 site-description">
-        <div class="description-wrapper">
-          <h5 class="description-text">My side projects and contact details.</h5>
-          <div id="cursor"></div>
-        </div>
+      <div class="row">
+        <h1 class="title-text glitch" data-text="> Shawn">&gt; Shawn</h1>
+        <h1 class="title-text glitch" data-text="> Typescript/Javascript, Python, Postgres, MongoDB">&gt; Typescript/Javascript, Python, Postgres, MongoDB</h1>
+        <h1 class="title-text glitch" data-text="> AWS Certified Developer - Associate">&gt; AWS Certified Developer - Associate</h1>
       </div>
     </div>
   </header>
   <main class="main-content" style="position: relative">
     <div class="container projects-section">
-      <h1 class="section-title" id="project-section">Projects</h1>
+      <div style="display: flex; align-items: center;">
+        <h1 class="section-title" id="project-section">Projects</h1>
+        <div id="cursor"></div>
+      </div>
       <div class="projects-list">
         <hr />
         <div class="row project pb-5">
@@ -223,20 +224,6 @@
           </div>
         </div>
         <hr />
-        <div class="row project pb-5">
-          <div class="row mb-3">
-            <div class="col-lg-5">
-              <h3>Hand Gesture Detection</h3>
-            </div>
-            <div class="col-sm my-auto">
-              <span class="badge rounded-pill bg-dark">Python</span>
-              <span class="badge rounded-pill bg-dark">AWS S3</span>
-            </div>
-          </div>
-          <div class="row blur-effect align-items-center ms-1">
-            <h3 class="coming-soon">Coming Soon.</h3>
-          </div>
-        </div>
       </div>
     </div>
     <div class="container contacts-section pb-5">
